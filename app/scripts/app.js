@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('jenkinsGruntApp', [
+  .module('jenkinsGruntApp',  [
     'ngAnimate',
     'ngCookies',
     'ngResource',
