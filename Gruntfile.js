@@ -24,6 +24,21 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    githooks: {
+    all: {
+      options: {
+        //template: 'path/to/a/template'
+      },
+      // Will bind the jshint and test:unit tasks
+      // with the template specified above
+      'pre-commit': 'jshint',
+      // Will bind the bower:install task
+      // with a specific template
+      //'post-merge': {
+        //taskNames: 'bower:install',
+        //template: 'path/to/another/template'
+      }
+    },
     // Project settings
     yeoman: appConfig,
 
